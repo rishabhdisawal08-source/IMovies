@@ -1,0 +1,15 @@
+{
+  "name": "imovies-mern",
+  "version": "1.0.0",
+  "private": true,
+  "description": "IMovies - Full Stack MERN Movie Ticket Booking System",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "seed": "npm run seed --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
